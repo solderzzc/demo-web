@@ -203,7 +203,7 @@
             tvm.logger("- Model execution["+i+"] completed: "+(new Date()-start_inner));
             console.log("- Model execution["+i+"] completed: "+(new Date()-start_inner));
           }
-          tvm.logger("- Model execution runtime everage: "+(new Date()-start)/100);
+          tvm.logger("- Model execution runtime everage: "+(new Date()-start)/10);
 
           out_shape = JSON.parse(load_file("out_shape.json"));
           output = tvm.empty(out_shape, "float32", ctx);
